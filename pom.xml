@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>myLaba.ua.lb2.parser</groupId>
+  <artifactId>LB2</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>LB2</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- Java version -->
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+
+    <!-- versions -->
+    <jaxb.version>4.0.0</jaxb.version>
+    <jaxb-core.version>4.0.0</jaxb-core.version>
+    <activation.version>1.1.1</activation.version>
+    <msv.version>2013.6.1</msv.version>
+    <woodstox.version>6.2.1</woodstox.version>
+  </properties>
+
+  <dependencies>
+    <!-- Required for Java 13 or latter to manage MIME data -->
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <version>${activation.version}</version>
+    </dependency>
+
+    <!-- JAXB -->
+    <dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>${jaxb.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>${jaxb.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-core</artifactId>
+      <version>${jaxb-core.version}</version>
+    </dependency>
+
+    <!-- External parser -->
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.woodstox/woodstox-core -->
+    <dependency>
+      <groupId>com.fasterxml.woodstox</groupId>
+      <artifactId>woodstox-core</artifactId>
+      <version>${woodstox.version}</version>
+    </dependency>
+    <!-- The Multi Schema Validation toolkit is a Java based toolkit
+         consisting of 8 different submodules. -->
+    <!-- https://mvnrepository.com/artifact/net.java.dev.msv/msv -->
+    <dependency>
+      <groupId>net.java.dev.msv</groupId>
+      <artifactId>msv</artifactId>
+      <version>${msv.version}</version>
+      <type>pom</type>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/net.java.dev.msv/xsdlib -->
+    <dependency>
+      <groupId>net.java.dev.msv</groupId>
+      <artifactId>xsdlib</artifactId>
+      <version>${msv.version}</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>jaxb2-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <id>xjc</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>xjc</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
+          <clearOutputDir>false</clearOutputDir>
+          <sources>
+            <source>${basedir}/src/xml/completeOrders.xsd</source>
+          </sources>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

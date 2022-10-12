@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ord:orders xmlns:ord="http://model.lb2.ua.mylaba/order/" xmlns:driv="http://model.lb2.ua.mylaba/driver/" xmlns:user="http://model.lb2.ua.mylaba/user/">
+    <ord:order code="RWAER" id="1">
+        <ord:driver id="1">
+            <driv:name>Олег</driv:name>
+            <driv:surname>Петренко</driv:surname>
+            <driv:age>33</driv:age>
+            <driv:phone>+380660166700</driv:phone>
+            <driv:mark>8.34</driv:mark>
+            <driv:car id="1">
+                <driv:brand>Nexia</driv:brand>
+                <driv:c_name>Dewoo</driv:c_name>
+                <driv:yearOfProduction>1999</driv:yearOfProduction>
+                <driv:number>AX9854CB</driv:number>
+                <driv:vinNumber>SDFDSFSDFRGKBSQYU</driv:vinNumber>
+                <driv:c_class>Економ</driv:c_class>
+                <driv:color>Червоний</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user code="DFSFE" id="1">
+            <user:surname>Короленко</user:surname>
+            <user:addressFrom>Лопанська набережна</user:addressFrom>
+            <user:addressTo>Вулиця Скрипника</user:addressTo>
+            <user:answer>
+                <user:email>dsfdfds@gmail.com</user:email>
+            </user:answer>
+        </ord:user>
+        <ord:price>50.33</ord:price>
+        <ord:mark>7</ord:mark>
+    </ord:order>
+    <ord:order code="DSFJH" id="2">
+        <ord:driver id="2">
+            <driv:name>Петро</driv:name>
+            <driv:surname>Потрошенко</driv:surname>
+            <driv:age>56</driv:age>
+            <driv:phone>0660170066</driv:phone>
+            <driv:mark>9.14</driv:mark>
+            <driv:car id="2">
+                <driv:brand>Prius</driv:brand>
+                <driv:c_name>Toyota</driv:c_name>
+                <driv:yearOfProduction>2012</driv:yearOfProduction>
+                <driv:number>AX7561MH</driv:number>
+                <driv:vinNumber>L8FDSFCVFRGHGSQ4F</driv:vinNumber>
+                <driv:c_class>Преміум</driv:c_class>
+                <driv:color>Білий</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user code="DSFBS" id="2">
+            <user:name>Дмитро</user:name>
+            <user:surname>Пилипко</user:surname>
+            <user:addressFrom>станція метро Наукова</user:addressFrom>
+            <user:addressTo>вулиця Плеханівська 12</user:addressTo>
+            <user:answer>
+                <user:phone>+380657166879</user:phone>
+            </user:answer>
+        </ord:user>
+        <ord:price>120</ord:price>
+        <ord:mark>9</ord:mark>
+    </ord:order>
+    <ord:order code="SDFNB" id="3">
+        <ord:driver code="HGJFB" id="3">
+            <driv:name>Микита</driv:name>
+            <driv:surname>Стерненко</driv:surname>
+            <driv:age>25</driv:age>
+            <driv:phone>0681245759</driv:phone>
+            <driv:mark>7.34</driv:mark>
+            <driv:car code="HGJFB" id="3">
+                <driv:brand>Lanos</driv:brand>
+                <driv:c_name>Dewoo</driv:c_name>
+                <driv:yearOfProduction>2005</driv:yearOfProduction>
+                <driv:number>AX8763OX</driv:number>
+                <driv:vinNumber>KDFDSFC35RG4FSQ43</driv:vinNumber>
+                <driv:c_class>Середній</driv:c_class>
+                <driv:color>Зелений</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user code="NGFJR" id="3">
+            <user:addressFrom>станція метро Ботанічний сад</user:addressFrom>
+            <user:addressTo>станція метро Холодна гора</user:addressTo>
+            <user:answer>
+                <user:email>mykyta@gmail.com</user:email>
+            </user:answer>
+        </ord:user>
+        <ord:price>180.56</ord:price>
+        <ord:mark>4</ord:mark>
+    </ord:order>
+    <ord:order code="NDMFJ" id="4">
+        <ord:driver id="4">
+            <driv:name>Микола</driv:name>
+            <driv:surname>Гончаренко</driv:surname>
+            <driv:age>48</driv:age>
+            <driv:phone>+380995498678</driv:phone>
+            <driv:mark>5.98</driv:mark>
+            <driv:car id="4">
+                <driv:brand>Caddy</driv:brand>
+                <driv:c_name>VW</driv:c_name>
+                <driv:yearOfProduction>2003</driv:yearOfProduction>
+                <driv:number>AX5475PH</driv:number>
+                <driv:vinNumber>4FFDKC3D5RG4HJQDF</driv:vinNumber>
+                <driv:c_class>Вантажний</driv:c_class>
+                <driv:color>Сірий</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user id="4">
+            <user:name>Роман</user:name>
+            <user:addressFrom>вулиця Соборна 43</user:addressFrom>
+            <user:addressTo>вулиця Золочівська</user:addressTo>
+            <user:answer>
+                <user:phone>0680477300</user:phone>
+            </user:answer>
+        </ord:user>
+        <ord:price>470</ord:price>
+        <ord:mark>6</ord:mark>
+    </ord:order>
+</ord:orders>

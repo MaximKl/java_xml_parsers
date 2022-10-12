@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ord:orders xmlns:ord="http://model.lb2.ua.mylaba/order/"
+            xmlns:driv="http://model.lb2.ua.mylaba/driver/"
+            xmlns:user="http://model.lb2.ua.mylaba/user/"
+>
+  <!--1 or more repetitions:-->
+    <ord:order id="1">
+        <ord:driver id="1">
+            <driv:name>Олег</driv:name>
+            <driv:surname>Пилипко</driv:surname>
+            <driv:age>22</driv:age>
+            <driv:phone>0660166700</driv:phone>
+            <driv:mark>7.165</driv:mark>
+            <driv:car id="1">
+                <driv:brand>Dewoo</driv:brand>
+                <driv:c_name>Lanos</driv:c_name>
+                <driv:yearOfProduction>2003</driv:yearOfProduction>
+                <driv:number>AX8753BM</driv:number>
+                <driv:vinNumber>FHDSJFJDF435DTNQS</driv:vinNumber>
+                <driv:c_class>Економ</driv:c_class>
+                <driv:color>Зелений</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user id="1">
+            <user:addressFrom>ХНУРЕ</user:addressFrom>
+            <user:addressTo>вулиця Петра Болбочана 7</user:addressTo>
+            <user:answer>
+                <user:email>olegator@gmail.com</user:email>
+            </user:answer>
+        </ord:user>
+        <ord:price>123.45</ord:price>
+        <ord:mark>4</ord:mark>
+    </ord:order>
+
+    <ord:order id="2" code="ERQSD">
+        <ord:driver id="2">
+            <driv:name>Дмитро</driv:name>
+            <driv:surname>Петренко</driv:surname>
+            <driv:age>38</driv:age>
+            <driv:phone>+380660166700</driv:phone>
+            <driv:mark>9.234</driv:mark>
+            <driv:car id="2" code="ABOBA">
+                <driv:brand>Toyota</driv:brand>
+                <driv:c_name>Prius</driv:c_name>
+                <driv:yearOfProduction>2013</driv:yearOfProduction>
+                <driv:number>AX3571HP</driv:number>
+                <driv:vinNumber>XVCVRUTR3434DFDF9</driv:vinNumber>
+                <driv:c_class>Середній</driv:c_class>
+                <driv:color>Синій</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user id="2">
+            <!--Optional:-->
+            <user:name>Петро</user:name>
+            <!--Optional:-->
+            <user:surname>Потрошенко</user:surname>
+            <user:addressFrom>Площа Свободи 4б</user:addressFrom>
+            <user:addressTo>Сумська 33</user:addressTo>
+            <user:answer>
+                <user:phone>+380660166600</user:phone>
+            </user:answer>
+        </ord:user>
+        <ord:price>50.22</ord:price>
+        <ord:mark>7</ord:mark>
+    </ord:order>
+
+    <ord:order id="3">
+        <ord:driver id="3" code="DFTRW">
+            <driv:name>Максим</driv:name>
+            <driv:surname>Авраменко</driv:surname>
+            <driv:age>30</driv:age>
+            <driv:phone>+380660155600</driv:phone>
+            <driv:mark>9.1</driv:mark>
+            <driv:car id="3">
+                <driv:brand>Skoda</driv:brand>
+                <driv:c_name>Octavia</driv:c_name>
+                <driv:yearOfProduction>2013</driv:yearOfProduction>
+                <driv:number>AX9647EP</driv:number>
+                <driv:vinNumber>BDSFRBVR3434DFDF4</driv:vinNumber>
+                <driv:c_class>Преміум</driv:c_class>
+                <driv:color>Білий</driv:color>
+            </driv:car>
+        </ord:driver>
+        <ord:user id="3" code="DFJBS">
+            <!--Optional:-->
+            <user:name>Петро</user:name>
+            <!--Optional:-->
+            <user:surname>Андрійович</user:surname>
+            <user:addressFrom>Полтавський шлях 14</user:addressFrom>
+            <user:addressTo>станція метро Київська</user:addressTo>
+            <user:answer>
+                <user:phone>+380280144600</user:phone>
+            </user:answer>
+        </ord:user>
+        <ord:price>60.3</ord:price>
+        <ord:mark>10</ord:mark>
+    </ord:order>
+
+</ord:orders>

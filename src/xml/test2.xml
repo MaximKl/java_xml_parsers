@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:orders xmlns="http://model.lb2.ua.mylaba/driver/" xmlns:ns2="http://model.lb2.ua.mylaba/order/" xmlns:ns3="http://model.lb2.ua.mylaba/user/">
+    <ns2:order id="1" code="RWAER">
+        <ns2:driver id="1">
+            <name>Олег</name>
+            <surname>Петренко</surname>
+            <age>33</age>
+            <phone>+380660166700</phone>
+            <mark>8.34</mark>
+            <car id="1">
+                <brand>Nexia</brand>
+                <c_name>Dewoo</c_name>
+                <yearOfProduction>1999</yearOfProduction>
+                <number>AX9854CB</number>
+                <vinNumber>SDFDSFSDFRGKBSQYU</vinNumber>
+                <c_class>Економ</c_class>
+                <color>Червоний</color>
+            </car>
+        </ns2:driver>
+        <ns2:user id="1" code="DFSFE">
+            <ns3:surname>Короленко</ns3:surname>
+            <ns3:addressFrom>Лопанська набережна</ns3:addressFrom>
+            <ns3:addressTo>Вулиця Скрипника</ns3:addressTo>
+            <ns3:answer>
+                <ns3:email>dsfdfds@gmail.com</ns3:email>
+            </ns3:answer>
+        </ns2:user>
+        <ns2:price>50.33</ns2:price>
+        <ns2:mark>7</ns2:mark>
+    </ns2:order>
+    <ns2:order id="2" code="DSFJH">
+        <ns2:driver id="2">
+            <name>Петро</name>
+            <surname>Потрошенко</surname>
+            <age>56</age>
+            <phone>0660170066</phone>
+            <mark>9.14</mark>
+            <car id="2">
+                <brand>Prius</brand>
+                <c_name>Toyota</c_name>
+                <yearOfProduction>2012</yearOfProduction>
+                <number>AX7561MH</number>
+                <vinNumber>L8FDSFCVFRGHGSQ4F</vinNumber>
+                <c_class>Преміум</c_class>
+                <color>Білий</color>
+            </car>
+        </ns2:driver>
+        <ns2:user id="2" code="DSFBS">
+            <ns3:name>Дмитро</ns3:name>
+            <ns3:surname>Пилипко</ns3:surname>
+            <ns3:addressFrom>станція метро Наукова</ns3:addressFrom>
+            <ns3:addressTo>вулиця Плеханівська 12</ns3:addressTo>
+            <ns3:answer>
+                <ns3:phone>+380657166879</ns3:phone>
+            </ns3:answer>
+        </ns2:user>
+        <ns2:price>120</ns2:price>
+        <ns2:mark>9</ns2:mark>
+    </ns2:order>
+    <ns2:order id="3" code="SDFNB">
+        <ns2:driver id="3" code="HGJFB">
+            <name>Микита</name>
+            <surname>Стерненко</surname>
+            <age>25</age>
+            <phone>0681245759</phone>
+            <mark>7.34</mark>
+            <car id="3" code="HGJFB">
+                <brand>Lanos</brand>
+                <c_name>Dewoo</c_name>
+                <yearOfProduction>2005</yearOfProduction>
+                <number>AX8763OX</number>
+                <vinNumber>KDFDSFC35RG4FSQ43</vinNumber>
+                <c_class>Середній</c_class>
+                <color>Зелений</color>
+            </car>
+        </ns2:driver>
+        <ns2:user id="3" code="NGFJR">
+            <ns3:addressFrom>станція метро Ботанічний сад</ns3:addressFrom>
+            <ns3:addressTo>станція метро Холодна гора</ns3:addressTo>
+            <ns3:answer>
+                <ns3:email>mykyta@gmail.com</ns3:email>
+            </ns3:answer>
+        </ns2:user>
+        <ns2:price>180.56</ns2:price>
+        <ns2:mark>4</ns2:mark>
+    </ns2:order>
+    <ns2:order id="4" code="NDMFJ">
+        <ns2:driver id="4">
+            <name>Микола</name>
+            <surname>Гончаренко</surname>
+            <age>48</age>
+            <phone>+380995498678</phone>
+            <mark>5.98</mark>
+            <car id="4">
+                <brand>Caddy</brand>
+                <c_name>VW</c_name>
+                <yearOfProduction>2003</yearOfProduction>
+                <number>AX5475PH</number>
+                <vinNumber>4FFDKC3D5RG4HJQDF</vinNumber>
+                <c_class>Вантажний</c_class>
+                <color>Сірий</color>
+            </car>
+        </ns2:driver>
+        <ns2:user id="4">
+            <ns3:name>Роман</ns3:name>
+            <ns3:addressFrom>вулиця Соборна 43</ns3:addressFrom>
+            <ns3:addressTo>вулиця Золочівська</ns3:addressTo>
+            <ns3:answer>
+                <ns3:phone>0680477300</ns3:phone>
+            </ns3:answer>
+        </ns2:user>
+        <ns2:price>470</ns2:price>
+        <ns2:mark>6</ns2:mark>
+    </ns2:order>
+</ns2:orders>
